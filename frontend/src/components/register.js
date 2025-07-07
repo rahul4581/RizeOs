@@ -13,7 +13,7 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const responce=axios.post("http://localhost:5000/api/auth/register",form);
+    const responce=axios.post("https://rizeos.onrender.com/api/auth/register",form);
     console.log("Form submitted:", form);
     navigate("/login");
   };

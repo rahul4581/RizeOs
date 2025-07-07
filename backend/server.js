@@ -10,7 +10,10 @@ import jobRoutes from "./routes/jobRoutes.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*', // or replace '*' with your frontend Vercel domain
+  credentials: true,
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);

@@ -10,7 +10,7 @@ function Jobs(){
     
     useEffect(() =>{
         const getJobs=async ()=>{
-            const response=await axios.get("http://localhost:5000/api/job");
+            const response=await axios.get("https://rizeos.onrender.com/api/job");
             setJobs(response.data);
         };
         getJobs();

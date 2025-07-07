@@ -31,7 +31,7 @@ function PostJob() {
   const fetchWalletFromProfile = async () => {
     try {
         const token=localStorage.getItem("token");
-        const res=await axios.get("http://localhost:5000/api/user/me",{
+        const res=await axios.get("https://rizeos.onrender.com/api/user/me",{
             headers:{Authorization:`Bearer ${token}`}
         })
         if (res.data.walletAddress) {
@@ -89,7 +89,7 @@ function PostJob() {
         ...job,
         skills: job.skills.split(",").map((s) => s.trim()), // convert to array
       };
-      await axios.post("http://localhost:5000/api/job/postJob", formattedJob);
+      await axios.post("https://rizeos.onrender.com/api/job/postJob", formattedJob);
       alert("Job posted successfully!");
       navigate("/home");
     } catch (err) {

@@ -14,7 +14,7 @@ useEffect(() => {
       const token = localStorage.getItem("token");
       console.log("Token found:", token); // ✅ Check if token exists
 
-      const response = await axios.get("http://localhost:5000/api/user/getAllUsers", {
+      const response = await axios.get("https://rizeos.onrender.com/api/user/getAllUsers", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

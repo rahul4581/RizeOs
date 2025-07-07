@@ -14,7 +14,7 @@ function Login() {
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.post("http://localhost:5000/api/auth/login", form);
+    const response = await axios.post("https://rizeos.onrender.com/api/auth/login", form);
 
     // ✅ STEP 1: Console the response to verify structure
     console.log("Login response:", response.data);

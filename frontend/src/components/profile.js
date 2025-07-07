@@ -20,7 +20,7 @@ function Profile() {
     const fetchUser = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/user/me", {
+        const res = await axios.get("https://rizeos.onrender.com/api/user/me", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -74,7 +74,7 @@ const connectWallet = async () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        "http://localhost:5000/api/user/me",
+        "https://rizeos.onrender.com/api/user/me",
         {
           bio: form.bio,
           linkedIn: form.linkedIn,
