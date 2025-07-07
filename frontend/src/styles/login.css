@@ -1,0 +1,99 @@
+.login-container {
+  background: #fff7ef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#00c853;
+    display:flex;
+    flex-direction:row;
+}
+.search-icon{
+  margin-top: 20px;
+  margin-left: 10px;
+  color:red;
+  font-size:30px;
+  font-weight:bold;
+}
+.login-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.login-btn {
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(to right, #00c853, #64dd17);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #00bfa5, #1de9b6);
+}
+
+.login-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.login-footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
